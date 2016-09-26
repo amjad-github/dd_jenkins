@@ -392,7 +392,8 @@
 			username="${sf.username}" 
 			password="${sf.password}" 
 			serverurl="${sf.serverurl}" 
-			retrieveTarget="uninstallsrc"/>
+			retrieveTarget="uninstallsrc"
+			unpackaged="${user.dir}/package.xml"/>
 
 		<!-- Build a destructiveChanges.xml pacckage to delete metadata in org but not in repo -->
 		<buildDestroyStaleMetadata srcdir="uninstallsrc" commdir="./src" dir="uninstall" />
