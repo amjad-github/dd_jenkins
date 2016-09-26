@@ -396,6 +396,7 @@
 			unpackaged="${user.dir}/package.xml"/>
 
 		<!-- Build a destructiveChanges.xml pacckage to delete metadata in org but not in repo -->
+		<buildPackageXml srcdir="uninstallsrc" version="37" />
 		<buildDestroyStaleMetadata srcdir="uninstallsrc" commdir="src" dir="uninstall" />
 		
 		<copy file="${user.dir}/uninstall/destructiveChanges.xml" todir="${env.CIRCLE_ARTIFACTS}"/>
