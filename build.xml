@@ -410,7 +410,6 @@
 			logType="${SF_LOGDETAIL}"
 			purgeOnDelete="true" />
 
-		<!--delete dir="uninstallsrc" />
-		<!--delete dir="uninstall" /-->
+		
 	</target>
 </project>
